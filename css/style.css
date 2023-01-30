@@ -1,0 +1,135 @@
+/* General Styles */
+.text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.body {
+    padding-top:70px;
+}
+
+.img{
+  background: url("path");
+  background-size:cover;
+  width: 400px;
+}
+
+/* Homepage Styles */
+.homepage {
+    background-image: url("https://live.staticflickr.com/65535/52653756135_abb400d46e_b.jpg");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: grey;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color:black;
+}
+
+/* For Skinny Phones */
+@media only screen and (max-width: 320px) {
+    .my-panel {
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        height: 330px;
+        width:250px;
+        margin-top: -135px; /*set to a negative number 1/2 of your height*/
+        margin-left: -125px; /*set to a negative number 1/2 of your width*/
+        border: 1px solid #ccc;
+        background-color: #f3f3f3;
+    }
+    #button-2{
+        margin-top: 5px;
+    }
+}
+
+/* For Phones */
+@media only screen and (min-width: 320px) {
+    .my-panel {
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        height: 330px;
+        width:300px;
+        margin-top: -135px; /*set to a negative number 1/2 of your height*/
+        margin-left: -150px; /*set to a negative number 1/2 of your width*/
+        border: 1px solid #ccc;
+        background-color: #f3f3f3;
+    }
+    #button-2{
+        margin-top: 5px;
+    }
+}
+
+/* For Small Tablets */
+@media only screen and (min-width: 450px) {
+    .my-panel {
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        height:290px;
+        width:350px;
+        margin-top: -125px; /*set to a negative number 1/2 of your height*/
+        margin-left: -175px; /*set to a negative number 1/2 of your width*/
+        border: 1px solid #ccc;
+        background-color: #f3f3f3;
+    }
+    #button-2{
+        margin-top: 5px;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width: 675px) {
+    .my-panel {
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        height:200px;
+        width:650px;
+        margin-top: -75px; /*set to a negative number 1/2 of your height*/
+        margin-left: -325px; /*set to a negative number 1/2 of your width*/
+        border: 1px solid #ccc;
+        background-color: #f3f3f3;
+    }
+    #button-1,
+    #button-2{
+        margin-top: -5px;
+    }
+}
+
+/* For Computers */
+@media only screen and (min-width: 768px) {
+    .my-panel {
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        height:200px;
+        width:700px;
+        margin-top: -80px; /*set to a negative number 1/2 of your height*/
+        margin-left: -350px; /*set to a negative number 1/2 of your width*/
+        border: 1px solid #ccc;
+        background-color: #f3f3f3;
+    }
+    #button-1,
+    #button-2{
+        margin-top: -5px;
+    }
+}
+

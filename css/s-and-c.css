@@ -1,0 +1,168 @@
+@import url(navbar.css);
+
+
+@media(min-width:990px){
+    .container{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5% min-content 100px;
+        grid-template-areas: 
+            "nav nav"
+            "cover text"
+            "ft ft";
+    }
+    .book-cover,
+    .text{
+        margin-top: 30px;
+    }
+    img,
+    figcaption {
+        display: block;
+        margin: auto;
+        width:45vh;
+    }
+}
+
+
+@media(min-width:1200px){
+    img,
+    figcaption {
+        display: block;
+        margin: auto;
+        width:60vh;
+    }
+}
+
+@media(max-width:989px){
+    .container{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 4% min-content min-content min-content 100px;
+        grid-template-areas: 
+            "nav"
+            "cover"
+            "text"
+            "author"
+            "ft";
+    } 
+    .navbar__items {
+        display:none;
+    }
+    .navbar__link {
+        border-right: none;
+    }
+    .book-cover{
+        margin-top: 20px;
+    }
+    img,
+    figcaption {
+        display: block;
+        margin: auto;
+        width: 49%;
+    }
+}
+
+@media(max-width:399px){
+    .container{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 4% min-content min-content min-content 100px;
+        grid-template-areas: 
+            "nav"
+            "cover"
+            "text"
+            "author"
+            "ft";
+    } 
+    .navbar__items {
+        display:none;
+    }
+    .navbar__link {
+        border-right: none;
+    }
+    .book-cover{
+        margin-top: 40px;
+    }
+    img,
+    figcaption {
+        display: block;
+        margin: auto;
+        width: 49%;
+    }
+}
+.share{
+    grid-area: share;
+    margin:10px;
+}
+.navbar{
+    grid-area: nav;
+}
+.book-cover{
+    grid-area: cover;
+}
+.text{
+    grid-area: text;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* text and color styles */
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: 'Roboto', sans-serif;
+}
+figcaption{
+    padding-top: 5px;
+    font-size:small;
+    text-align: center;
+}
+h1{
+    font-weight:250;
+    text-align: center;
+}
+h2{
+    font-weight:225;
+}
+h3{
+    font-weight:200;
+}
+hr{
+    margin: 7px;
+    height: 1px;
+    border:none;
+    color:gray;
+    background-color:gray
+}
+.img-break{
+    line-height: 2px;
+}
+.blog-post-link{
+    text-decoration: none;
+    color:black;
+}
+.nav-link{
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(85, 85, 85);
+    text-decoration: underline;
+}
+a:active{
+    color:rgb(85, 85, 85);
+    text-decoration: underline;
+}
+.button{
+    text-decoration: none;
+    color:black;
+}
+button{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+.avatar{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
