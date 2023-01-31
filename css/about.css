@@ -7,15 +7,6 @@
             "nav"
             "text";
     }
-    
-    .text{
-        padding-top: 50px;
-    }
-
-    iframe{
-        width: 750px;
-        height: 422px;
-    }
 }
 
 @media(max-width:999px){
@@ -33,38 +24,18 @@
     .navbar__link {
         border-right: none;
     }
-
-    .text{
-        padding-top: 50px;
-    }
-
-    iframe{
-        width: 600px;
-        height: 338px;
-    }
+}  
+.text{
+    padding-top: 50px;
 }
 
-@media(max-width:849px){
-    iframe{
-        width: 500px;
-        height: 281px;
-    }
+iframe{
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    width: 64vw;
+    height: 36vw;
 }
-
-@media(max-width:649px){
-    iframe{
-        width: 400px;
-        height: 225px;
-    }
-}
-
-@media(max-width:499px){
-    iframe{
-        width: 250px;
-        height: 141px;
-    }
-}
-
 
 .navbar{
     grid-area: nav;
